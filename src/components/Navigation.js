@@ -1,4 +1,4 @@
-import { css } from 'https://unpkg.com/goober/dist/goober.module.js'
+import { css } from 'goober'
 
 const styles = css `
   width: 100%;
@@ -58,7 +58,7 @@ const styles = css `
 export default {
   name: 'Navigation',
   template: `
-    <header>
+    <header class="${styles}">
       <nav>
         <ul>
           <li>
@@ -71,7 +71,6 @@ export default {
       </nav>
     </header>
   `,
-  styles,
   computed: {
     cartItemNumber() {
       return this.$store.getters.cartItemNumber

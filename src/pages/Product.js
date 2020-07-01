@@ -1,4 +1,4 @@
-import { css } from 'https://unpkg.com/goober/dist/goober.module.js'
+import { css } from 'goober'
 
 const styles = css `
   padding: 1rem;
@@ -12,7 +12,7 @@ const styles = css `
 export default {
   name: 'Product',
   template: `
-    <div>
+    <div class="${styles}">
       <div>
         <strong>{{ product.title }}</strong> - {{ product.price }}
       </div>
@@ -21,7 +21,6 @@ export default {
       </div>
     </div>
   `,
-  styles,
   props: {
     product: {
       type: Object

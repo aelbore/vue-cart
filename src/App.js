@@ -1,5 +1,5 @@
 import Navigation from './components/Navigation.js'
-import { css } from 'https://unpkg.com/goober/dist/goober.module.js'
+import { css } from 'goober'
 
 const styles = css `
   button {
@@ -26,12 +26,11 @@ const styles = css `
 export default {
   name: 'App',
   template: `
-    <div>
+    <div class="${styles}">
       <Navigation />
       <router-view></router-view>
     </div>
   `,
-  styles,
   components: {
     Navigation
   }

@@ -1,5 +1,5 @@
 import Cart from './Cart.js'
-import { css } from 'https://unpkg.com/goober/dist/goober.module.js'
+import { css } from 'goober'
 
 const styles = css `
   width: 50rem;
@@ -23,7 +23,7 @@ export default {
     Cart
   },
   template: `
-    <main>
+    <main class="${styles}">
       <p v-if="carts.length <= 0">No Item in the Cart!</p>
       <ul>
         <li v-for="(product, index) in carts" :key="index">
@@ -32,7 +32,6 @@ export default {
       </ul>
     </main>
   `,
-  styles,
   computed: {
     carts() {
       return this.$store.getters.carts

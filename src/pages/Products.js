@@ -1,4 +1,4 @@
-import { css } from 'https://unpkg.com/goober/dist/goober.module.js'
+import { css } from 'goober'
 import Product from './Product.js'
 
 const styles = css `
@@ -19,7 +19,7 @@ export default {
     Product
   },
   template: `
-    <main>
+    <main class="${styles}">
       <ul>
         <li v-for="(product, index) in products" :key="index">
           <Product :product="product" />
