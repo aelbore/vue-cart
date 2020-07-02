@@ -2,6 +2,10 @@
 Basic Shopping Cart with Vue ES Module (without bundler or build step) <br />
 original version [Web Components Hooks](https://github.com/geocine/web-components-hooks-demo) by [geocine](https://github.com/geocine)
 
+Example
+------------
+* [Vue 3 with composition api and import-maps](https://github.com/aelbore/vue-cart/tree/vue3-composition-api)
+
 
 Getting Started
 ------------
