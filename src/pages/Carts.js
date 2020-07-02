@@ -1,5 +1,8 @@
-import Cart from './Cart.js'
 import { css } from 'goober'
+import { computed } from 'vue'
+import { useStore } from 'vuex'
+
+import Cart from './Cart.js'
 
 const styles = css `
   width: 50rem;
@@ -22,6 +25,12 @@ export default {
   components: {
     Cart
   },
+  setup() {
+    const store = useStore()
+    const carts = computed(() => store.getters.carts)
+
+    return { carts }
+  },
   template: `
     <main class="${styles}">
       <p v-if="carts.length <= 0">No Item in the Cart!</p>
@@ -31,10 +40,5 @@ export default {
         </li>
       </ul>
     </main>
-  `,
-  computed: {
-    carts() {
-      return this.$store.getters.carts
-    }
-  }
+  `
 }

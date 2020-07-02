@@ -1,4 +1,5 @@
 import { css } from 'goober'
+import { useStore } from 'vuex'
 
 const styles = css `
   padding: 1rem;
@@ -11,6 +12,17 @@ const styles = css `
 
 export default {
   name: 'Product',
+  props: {
+    product: {
+      type: Object
+    }
+  },
+  setup({ product }) {
+    const store = useStore()
+    const addToCart = () => store.dispatch('addToCart', product)
+
+    return { product, addToCart }
+  },
   template: `
     <div class="${styles}">
       <div>
@@ -20,15 +32,5 @@ export default {
         <button @click="addToCart()">Add to Cart</button>
       </div>
     </div>
-  `,
-  props: {
-    product: {
-      type: Object
-    }
-  },
-  methods: {
-    addToCart() {
-      this.$store.dispatch('addToCart', this.product)
-    }
-  }
+  `
 }
