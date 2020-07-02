@@ -1,10 +1,11 @@
 # vue-cart
-Basic Shopping Cart with Vue ES Module (without bundler or build step) <br />
+Basic Shopping Cart with Vue using [Vite](https://github.com/vitejs/vite) <br />
 original version [Web Components Hooks](https://github.com/geocine/web-components-hooks-demo) by [geocine](https://github.com/geocine)
 
 Example
 ------------
 * [Vue 2](https://github.com/aelbore/vue-cart)
+* [Vue 3 with composition api and import-maps](https://github.com/aelbore/vue-cart/tree/vue3-composition-api)
 
 
 Getting Started
@@ -13,7 +14,7 @@ Getting Started
     ```
       git clone https://github.com/aelbore/vue-cart.git
       cd vue-cart
-      git checkout vue3-composition-api
+      git checkout vue3-vite
       npm install or yarn install
     ```
   * Run the Application
@@ -22,7 +23,6 @@ Getting Started
     ```
 
 ### Features:
-* [ES Module Shims](https://github.com/guybedford/es-module-shims) - Shims for new ES modules features
+* [Vite](https://github.com/vitejs/vite) - Native-ESM powered web dev build tool
 * [Vuex](https://vuex.vuejs.org/) - state management
 * [Vue-Router](https://router.vuejs.org/) - routing
-* [Goober](https://www.npmjs.com/package/goober) - for css in js 

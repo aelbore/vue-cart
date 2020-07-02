@@ -4,7 +4,7 @@
   "description": "ES Module with Vue",
   "main": "index.js",
   "scripts": {
-    "serve": "lite-server"
+    "serve": "vite"
   },
   "keywords": [
     "vue",
@@ -14,14 +14,13 @@
   ],
   "author": "Arjay Elbore <aelbore.sg@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "es-module-shims": "^0.4.7",
-    "lite-server": "^2.5.4"
-  },
   "dependencies": {
-    "goober": "^1.8.0",
     "vue": "^3.0.0-beta.17",
     "vue-router": "^4.0.0-alpha.13",
     "vuex": "^4.0.0-beta.4"
+  },
+  "devDependencies": {
+    "sass": "^1.26.9",
+    "vite": "^1.0.0-beta.8"
   }
 }

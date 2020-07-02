@@ -4,7 +4,7 @@
   <base href="/" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VueES</title>
+  <title>Vue 3 Vite</title>
   <style>
     * {
       box-sizing: border-box;
@@ -15,20 +15,9 @@
       font-family: sans-serif;
     }
   </style>
-  <script defer src="/node_modules/es-module-shims/dist/es-module-shims.min.js"></script>
-  <script type="importmap-shim">
-    {
-      "imports": {
-        "vue": "/node_modules/vue/dist/vue.esm-browser.prod.js",
-        "vue-router": "/node_modules/vue-router/dist/vue-router.esm.js",
-        "vuex": "/node_modules/vuex/dist/vuex.esm-browser.prod.js",
-        "goober": "/node_modules/goober/dist/goober.module.js"
-      }
-    }
-  </script>
 </head>
 <body>
   <div id="app"></div>
-  <script type="module-shim" src="main.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>

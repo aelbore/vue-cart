@@ -1,8 +1,35 @@
-import { css } from 'goober'
+<template>
+  <header class="navigation">
+    <nav>
+      <ul>
+        <li>
+          <router-link to="/" exact>Products</router-link>
+        </li>
+        <li>
+          <router-link to="/carts">Carts ({{ cartItemNumber }})</router-link>
+        </li>
+      </ul>
+    </nav>
+  </header>  
+</template>
+
+<script>
 import { useStore } from 'vuex'
 import { computed } from 'vue'
 
-const styles = css `
+export default {
+  name: 'Navigation',
+  setup() {
+    const store = useStore()
+    const cartItemNumber = computed(() => store.getters.cartItemNumber)
+    
+    return { cartItemNumber }
+  }
+}
+</script>
+
+<style lang="scss">
+.navigation  {
   width: 100%;
   height: 4.5rem;
   background: #41b883;
@@ -55,28 +82,5 @@ const styles = css `
       --color: black;
     }
   }
-`
-
-export default {
-  name: 'Navigation',
-  setup() {
-    const store = useStore()
-    const cartItemNumber = computed(() => store.getters.cartItemNumber)
-    
-    return { cartItemNumber }
-  },
-  template: `
-    <header class="${styles}">
-      <nav>
-        <ul>
-          <li>
-            <router-link to="/" exact>Products</router-link>
-          </li>
-          <li>
-            <router-link to="/carts">Carts ({{ cartItemNumber }})</router-link>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  `
 }
+</style>
