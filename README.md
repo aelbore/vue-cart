@@ -1,12 +1,12 @@
 # vue-cart
-Basic Shopping Cart with Vue ES Module (without bundler or build step) <br />
-original version [Web Components Hooks](https://github.com/geocine/web-components-hooks-demo) by [geocine](https://github.com/geocine)
+Basic Shopping Cart with Vue 2 ES Module (without bundler or build step) <br />
+Original version [Web Components Hooks](https://github.com/geocine/web-components-hooks-demo) by [geocine](https://github.com/geocine)
 
 Example
 ------------
-* [Vue 2 with Composition API](https://github.com/aelbore/vue-cart/tree/vue2-composition-api)
-* [Vue 2 with Composition API and import-maps](https://github.com/aelbore/vue-cart/tree/vue2-esm-composition-api)
-* [Vue 3 with Composition API and import-maps](https://github.com/aelbore/vue-cart/tree/vue3-composition-api)
+* [Vue 2 with Composition API (Vue CLI)](https://github.com/aelbore/vue-cart/tree/vue2-composition-api)
+* [Vue 2 ES Module with Composition API and import-maps](https://github.com/aelbore/vue-cart/tree/vue2-esm-composition-api)
+* [Vue 3 ES Module with Composition API and import-maps](https://github.com/aelbore/vue-cart/tree/vue3-composition-api)
 * [Vue 3 using Vite](https://github.com/aelbore/vue-cart/tree/vue3-vite) 
 
 
