@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { useStore } from 'vuex'
+import { useCart } from '../useStore'
 
 export default {
   name: 'Cart',
@@ -19,12 +19,14 @@ export default {
       type: Object
     }
   },
-  setup({ product }) {
-    const store = useStore()
-    const removeFromCart = () => store.dispatch('removeFromCart', product)
+  setup(props) {
+    const { product, removeFromCart } = useCart(props)
 
-    return { product, removeFromCart }
-  },
+    return {
+      product,
+      removeFromCart
+    }
+  }
 }
 </script>
 

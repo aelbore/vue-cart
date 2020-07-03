@@ -9,9 +9,7 @@
 </template>
 
 <script>
-import { computed } from 'vue'
-import { useStore  } from 'vuex'
-
+import { useProduct } from '../useStore'
 import Product from './Product.vue'
 
 export default {
@@ -20,10 +18,11 @@ export default {
     Product
   },
   setup() {
-    const store = useStore()
-    const products = computed(() => store.getters.products)
+    const { products } = useProduct()
 
-    return { products }
+    return { 
+      products 
+    }
   }
 }
 </script>

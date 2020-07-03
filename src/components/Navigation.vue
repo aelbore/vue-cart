@@ -14,16 +14,16 @@
 </template>
 
 <script>
-import { useStore } from 'vuex'
-import { computed } from 'vue'
+import { useCart } from '../useStore'
 
 export default {
   name: 'Navigation',
   setup() {
-    const store = useStore()
-    const cartItemNumber = computed(() => store.getters.cartItemNumber)
-    
-    return { cartItemNumber }
+    const { cartItemNumber } = useCart()
+
+    return { 
+      cartItemNumber  
+    }
   }
 }
 </script>

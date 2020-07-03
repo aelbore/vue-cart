@@ -13,8 +13,7 @@
 
 <script>
 import Cart from './Cart.vue'
-import { computed } from 'vue'
-import { useStore } from 'vuex'
+import { useCart } from '../useStore'
 
 export default {
   name: 'Carts',
@@ -22,10 +21,11 @@ export default {
     Cart
   },
   setup() {
-    const store = useStore()
-    const carts = computed(() => store.getters.carts)
+    const { carts } = useCart()
 
-    return { carts }
+    return { 
+      carts 
+    }
   }
 }
 </script>
