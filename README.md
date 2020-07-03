@@ -4,7 +4,9 @@ Basic Shopping Cart with Vue 2 and Composition API, original version [Web Compon
 Example
 ------------
 * [Vue 2 with ES Module](https://github.com/aelbore/vue-cart)
-* [Vue 3 with composition api and import-maps](https://github.com/aelbore/vue-cart/tree/vue3-composition-api)
+* [Vue 2 with Composition API and import-maps](https://github.com/aelbore/vue-cart/tree/vue2-esm-composition-api)
+* [Vue 3 with Composition API and import-maps](https://github.com/aelbore/vue-cart/tree/vue3-composition-api)
+* [Vue 3 using Vite](https://github.com/aelbore/vue-cart/tree/vue3-vite) 
 
 
 Getting Started
