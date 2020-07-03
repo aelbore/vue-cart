@@ -1,5 +1,5 @@
 # vue-cart
-Basic Shopping Cart with Vue using [Vite](https://github.com/vitejs/vite) original version [Web Components Hooks](https://github.com/geocine/web-components-hooks-demo) by [geocine](https://github.com/geocine)
+Basic Shopping Cart with Vue 2 and Composition API, original version [Web Components Hooks](https://github.com/geocine/web-components-hooks-demo) by [geocine](https://github.com/geocine)
 
 Example
 ------------
