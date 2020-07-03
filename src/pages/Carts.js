@@ -1,6 +1,5 @@
 import { css } from 'goober'
-import { computed } from 'vue'
-import { useStore } from 'vuex'
+import { useCart } from '../useStore.js'
 
 import Cart from './Cart.js'
 
@@ -26,10 +25,11 @@ export default {
     Cart
   },
   setup() {
-    const store = useStore()
-    const carts = computed(() => store.getters.carts)
+    const { carts } = useCart()
 
-    return { carts }
+    return { 
+      carts 
+    }
   },
   template: `
     <main class="${styles}">

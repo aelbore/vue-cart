@@ -1,5 +1,5 @@
 import { css } from 'goober'
-import { useStore } from 'vuex'
+import { useCart } from '../useStore.js'
 
 const styles = css `
   padding: 1rem;
@@ -17,16 +17,18 @@ export default {
       type: Object
     }
   },
-  setup({ product }) {
-    const store = useStore()
-    const removeFromCart = () => store.dispatch('removeFromCart', product)
+  setup(props) {
+    const { product, removeFromCart } = useCart(props)
 
-    return { product, removeFromCart }
+    return {
+      product,
+      removeFromCart
+    }
   },
   template: `
     <div class="${styles}">
       <div>
-        <strong>{{ product.title }}</strong> - {{ product.price }} ({{ product.quantity }})
+        <strong>{{ product?.title }}</strong> - {{ product?.price }} ({{ product?.quantity }})
       </div>
       <div>
         <button @click="removeFromCart()">Remove from Cart</button>

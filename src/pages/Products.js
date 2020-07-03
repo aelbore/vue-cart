@@ -1,7 +1,6 @@
 import { css } from 'goober'
-import { computed } from 'vue'
-import { useStore } from 'vuex'
 
+import { useProduct } from '../useStore.js'
 import Product from './Product.js'
 
 const styles = css `
@@ -22,10 +21,11 @@ export default {
     Product
   },
   setup() {
-    const store = useStore()
-    const products = computed(() => store.getters.products)
+    const { products } = useProduct()
 
-    return { products }
+    return { 
+      products 
+    }
   },
   template: `
     <main class="${styles}">

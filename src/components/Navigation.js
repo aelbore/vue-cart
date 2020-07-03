@@ -1,6 +1,5 @@
 import { css } from 'goober'
-import { useStore } from 'vuex'
-import { computed } from 'vue'
+import { useCart } from '../useStore.js'
 
 const styles = css `
   width: 100%;
@@ -60,10 +59,11 @@ const styles = css `
 export default {
   name: 'Navigation',
   setup() {
-    const store = useStore()
-    const cartItemNumber = computed(() => store.getters.cartItemNumber)
-    
-    return { cartItemNumber }
+    const { cartItemNumber } = useCart()
+
+    return { 
+      cartItemNumber  
+    }
   },
   template: `
     <header class="${styles}">
