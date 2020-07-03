@@ -5,7 +5,8 @@ Original version [Web Components Hooks](https://github.com/geocine/web-component
 Example
 ------------
 * [Vue 2 with ES Module](https://github.com/aelbore/vue-cart)
-* [Vue 2 with composition api](https://github.com/aelbore/vue-cart/tree/vue2-composition-api)
+* [Vue 2 with Composition API (Vue CLI)](https://github.com/aelbore/vue-cart/tree/vue2-composition-api)
+* [Vue 3 ES Module with Composition API and import-maps](https://github.com/aelbore/vue-cart/tree/vue3-composition-api)
 * [Vue 3 using Vite](https://github.com/aelbore/vue-cart/tree/vue3-vite) 
 
 
