@@ -4,7 +4,7 @@
   "description": "ES Module with Vue",
   "main": "index.js",
   "scripts": {
-    "serve": "lite-server"
+    "serve": "lite-server -c bs-config.json"
   },
   "keywords": [
     "vue",
@@ -19,9 +19,10 @@
     "lite-server": "^2.5.4"
   },
   "dependencies": {
+    "@vue/composition-api": "^1.0.0-beta.1",
     "goober": "^1.8.0",
-    "vue": "^3.0.0-beta.17",
-    "vue-router": "^4.0.0-alpha.13",
-    "vuex": "^4.0.0-beta.4"
+    "vue": "^2.6.11",
+    "vue-router": "^3.3.4",
+    "vuex": "^3.5.1"
   }
 }

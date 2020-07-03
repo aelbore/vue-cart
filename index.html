@@ -4,7 +4,7 @@
   <base href="/" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VueES</title>
+  <title>Vue 2 ESM with Composition API</title>
   <style>
     * {
       box-sizing: border-box;
@@ -19,9 +19,10 @@
   <script type="importmap-shim">
     {
       "imports": {
-        "vue": "/node_modules/vue/dist/vue.esm-browser.prod.js",
-        "vue-router": "/node_modules/vue-router/dist/vue-router.esm.js",
-        "vuex": "/node_modules/vuex/dist/vuex.esm-browser.prod.js",
+        "@vue/composition-api": "/node_modules/@vue/composition-api/dist/vue-composition-api.esm.js",
+        "vue": "/node_modules/vue/dist/vue.esm.browser.min.js",
+        "vue-router": "/node_modules/vue-router/dist/vue-router.esm.browser.min.js",
+        "vuex": "/node_modules/vuex/dist/vuex.esm.browser.min.js",
         "goober": "/node_modules/goober/dist/goober.module.js"
       }
     }
