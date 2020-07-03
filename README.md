@@ -4,7 +4,8 @@ original version [Web Components Hooks](https://github.com/geocine/web-component
 
 Example
 ------------
-* [Vue 2](https://github.com/aelbore/vue-cart)
+* [Vue 2 with ES Module](https://github.com/aelbore/vue-cart)
+* [Vue 3 using Vite](https://github.com/aelbore/vue-cart/tree/vue3-vite) 
 
 
 Getting Started
