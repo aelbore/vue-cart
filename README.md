@@ -13,7 +13,7 @@ Getting Started
     ```
       git clone https://github.com/aelbore/vue-cart.git
       cd vue-cart
-      git checkout vue3-vite
+      git checkout vue2-composition-api
       npm install or yarn install
     ```
   * Run the Application
@@ -22,6 +22,6 @@ Getting Started
     ```
 
 ### Features:
-* [Vite](https://github.com/vitejs/vite) - Native-ESM powered web dev build tool
+* [Vue Composition API](https://github.com/vuejs/composition-api) - Vue 2 plugin for Composition API 
 * [Vuex](https://vuex.vuejs.org/) - state management
 * [Vue-Router](https://router.vuejs.org/) - routing

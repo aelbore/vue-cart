@@ -1,5 +1,12 @@
-import { computed } from 'vue'
-import { useStore } from 'vuex'
+import { getCurrentInstance, computed } from '@vue/composition-api'
+
+export function useStore() {
+  const vm = getCurrentInstance()
+	if (!vm) {
+		throw new Error('You must use this function within the "setup()" method, or insert the store as first argument.')
+	}
+	return vm.$store
+}
 
 export function useProduct(props = {}) {
   const store = useStore()
