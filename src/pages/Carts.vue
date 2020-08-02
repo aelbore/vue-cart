@@ -13,18 +13,15 @@
 
 <script>
 import Cart from './Cart.vue'
-import { useCart } from '../useStore'
 
 export default {
   name: 'Carts',
   components: {
     Cart
   },
-  setup() {
-    const { carts } = useCart()
-
-    return { 
-      carts 
+  computed: {
+    carts() {
+      return this.$store.getters.carts
     }
   }
 }

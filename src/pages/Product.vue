@@ -10,8 +10,6 @@
 </template>
 
 <script>
-import { useProduct } from '../useStore'
-
 export default {
   name: 'Product',
   props: {
@@ -19,12 +17,9 @@ export default {
       type: Object
     }
   },
-  setup(props) {
-    const { product, addToCart } = useProduct(props)
-
-    return { 
-      product, 
-      addToCart 
+  methods: {
+    addToCart() {
+      this.$store.dispatch('addToCart', this.product)
     }
   }
 }

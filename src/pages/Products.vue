@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import { useProduct } from '../useStore'
 import Product from './Product.vue'
 
 export default {
@@ -17,11 +16,9 @@ export default {
   components: {
     Product
   },
-  setup() {
-    const { products } = useProduct()
-
-    return { 
-      products 
+  computed: {
+    products() {
+      return this.$store.getters.products
     }
   }
 }

@@ -1,10 +1,12 @@
 {
   "name": "vue-es",
   "version": "1.0.0",
-  "description": "ES Module with Vue",
+  "description": "ES Module with Vue and Vite",
   "main": "index.js",
   "scripts": {
-    "serve": "vue-cli-service serve"
+    "postinstall": "ts-node ./tools/symlink.ts && yarn --cwd ./libs/vite-compat build",
+    "serve": "vite",
+    "build": "vite build"
   },
   "keywords": [
     "vue",
@@ -15,15 +17,16 @@
   "author": "Arjay Elbore <aelbore.sg@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@vue/composition-api": "^1.0.0-beta.1",
     "vue": "^2.6.11",
     "vue-router": "^3.3.4",
     "vuex": "^3.5.1"
   },
   "devDependencies": {
-    "@vue/cli-service": "^4.4.6",
-    "sass": "^1.26.9",
-    "sass-loader": "^9.0.0",
-    "vue-template-compiler": "^2.6.11"
+    "@vue/component-compiler-utils": "^3.2.0",
+    "aria-build": "^0.5.1",
+    "aria-fs": "^0.5.1",
+    "rollup-plugin-vue": "^5.1.19",
+    "vue-template-compiler": "^2.6.11",
+    "vite": "^1.0.0-rc.4"
   }
 }

@@ -10,12 +10,6 @@ import Navigation from './components/Navigation.vue'
 
 export default {
   name: 'App',
-  template: `
-    <div>
-      <Navigation />
-      <router-view></router-view>
-    </div>
-  `,
   components: {
     Navigation
   }

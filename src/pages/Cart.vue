@@ -10,8 +10,6 @@
 </template>
 
 <script>
-import { useCart } from '../useStore'
-
 export default {
   name: 'Cart',
   props: {
@@ -19,12 +17,9 @@ export default {
       type: Object
     }
   },
-  setup(props) {
-    const { product, removeFromCart } = useCart(props)
-
-    return {
-      product,
-      removeFromCart
+  methods: {
+    removeFromCart() {
+      this.$store.dispatch('removeFromCart', this.product)
     }
   }
 }

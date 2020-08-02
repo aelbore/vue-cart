@@ -14,15 +14,11 @@
 </template>
 
 <script>
-import { useCart } from '../useStore'
-
 export default {
   name: 'Navigation',
-  setup() {
-    const { cartItemNumber } = useCart()
-
-    return { 
-      cartItemNumber  
+  computed: {
+    cartItemNumber() {
+      return this.$store.getters.cartItemNumber
     }
   }
 }
