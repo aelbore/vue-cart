@@ -6,6 +6,7 @@ Example
 ------------
 * [Vue 2 with Composition API (Vue CLI)](https://github.com/aelbore/vue-cart/tree/vue2-composition-api)
 * [Vue 2 ES Module with Composition API and import-maps](https://github.com/aelbore/vue-cart/tree/vue2-esm-composition-api)
+* [Vue 2 using Vite](https://github.com/aelbore/vue-cart/tree/vue2-vite)
 * [Vue 3 ES Module with Composition API and import-maps](https://github.com/aelbore/vue-cart/tree/vue3-composition-api)
 * [Vue 3 using Vite](https://github.com/aelbore/vue-cart/tree/vue3-vite) 
 
