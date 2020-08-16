@@ -33,6 +33,5 @@ Using Nix
 
 ### Features:
 * [Vite](https://github.com/vitejs/vite) - Native-ESM powered web dev build tool
-* [Vue Composition API](https://github.com/vuejs/composition-api) - Vue 2 plugin for Composition API 
 * [Vuex](https://vuex.vuejs.org/) - state management
 * [Vue-Router](https://router.vuejs.org/) - routing
