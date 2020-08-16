@@ -15,7 +15,7 @@ Getting Started
     ```
       git clone https://github.com/aelbore/vue-cart.git
       cd vue-cart
-      git checkout vue2-composition-api
+      git checkout vue2-vite
       npm install or yarn install
     ```
   * Run the Application
