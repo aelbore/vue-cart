@@ -1,4 +1,0 @@
-[submodule "libs/vite-compat"]
-	path = libs/vite-compat
-	url = https://github.com/aelbore/vite-compat
-	branch = master

@@ -1,11 +1,10 @@
-import { createVuePlugin } from 'vite-compat'
+import { createVuePlugin } from 'vite-plugin-vue2'
 
 export default {
+  alias: {
+    'vue': 'vue/dist/vue.esm.js'
+  },
   plugins: [
-    createVuePlugin({
-      alias: {
-        'vue': 'vue/dist/vue.esm.js'
-      }
-    })
+    createVuePlugin()
   ]
 }

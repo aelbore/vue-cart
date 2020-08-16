@@ -1,5 +1,5 @@
 # vue-cart
-Basic Shopping Cart with Vue 2 (Vue CLI) and Composition API, original version [Web Components Hooks](https://github.com/geocine/web-components-hooks-demo) by [geocine](https://github.com/geocine)
+Basic Shopping Cart with Vue 2 using [Vite](https://github.com/vitejs/vite), original version [Web Components Hooks](https://github.com/geocine/web-components-hooks-demo) by [geocine](https://github.com/geocine)
 
 Example
 ------------
@@ -23,7 +23,16 @@ Getting Started
       npm run serve or yarn serve
     ```
 
+Using Nix
+------------
+  * Install [Nix](https://dev.to/aelbore/nix-as-development-environment-54ke)
+  * Install nix dependencies
+    ```
+      direnv allow
+    ```
+
 ### Features:
+* [Vite](https://github.com/vitejs/vite) - Native-ESM powered web dev build tool
 * [Vue Composition API](https://github.com/vuejs/composition-api) - Vue 2 plugin for Composition API 
 * [Vuex](https://vuex.vuejs.org/) - state management
 * [Vue-Router](https://router.vuejs.org/) - routing
