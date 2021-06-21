@@ -1,30 +1,21 @@
-import { computed } from 'vue'
+import { computed, toRefs } from 'vue'
 import { useStore } from 'vuex'
 
-export function useProduct(props = {}) {
-  const store = useStore()
+export function useProduct(props) {
+  const { dispatch, getters } = useStore()
 
-  const addToCart = () => store.dispatch('addToCart', props.product)
-  const products = computed(() => store.getters.products)
+  const addToCart = () => dispatch('addToCart', props.product)
+  const products = computed(() => getters.products)
 
-  return { 
-    ...props, 
-    products, 
-    addToCart 
-  }
+  return { ...toRefs(props), products, addToCart }
 }
 
-export function useCart(props = {}) {
-  const store = useStore()
+export function useCart(props) {
+  const { dispatch, getters } = useStore()
 
-  const cartItemNumber = computed(() => store.getters.cartItemNumber)
-  const carts = computed(() => store.getters.carts)
-  const removeFromCart = () => store.dispatch('removeFromCart', props.product)
+  const cartItemNumber = computed(() => getters.cartItemNumber)
+  const carts = computed(() => getters.carts)
+  const removeFromCart = () => dispatch('removeFromCart', props.product)
   
-  return {
-    ...props,
-    carts,
-    cartItemNumber,
-    removeFromCart
-  }
+  return { ...toRefs(props), carts, cartItemNumber, removeFromCart }
 }
