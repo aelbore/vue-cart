@@ -16,12 +16,14 @@
   "author": "Arjay Elbore <aelbore.sg@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "vue": "^3.0.0-rc.5",
-    "vue-router": "^4.0.0-beta.4",
-    "vuex": "^4.0.0-beta.4"
+    "vue": "^3.1.1",
+    "vue-router": "^4.0.9",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "sass": "^1.26.10",
-    "vite": "^1.0.0-rc.4"
+    "@vitejs/plugin-vue": "^1.2.3",
+    "@vue/compiler-sfc": "^3.1.1",
+    "sass": "^1.35.1",
+    "vite": "^2.3.8"
   }
 }
